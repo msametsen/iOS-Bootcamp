@@ -8,11 +8,18 @@
 import UIKit
 
 class OyunEkraniVC: UIViewController {
+    
+    var kisi:Kisiler?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        if let k = kisi {
+            print("Kişi ad   : \(k.ad!)")
+            print("Kişi yaş  : \(k.yas!)")
+            print("Kişi boy  : \(k.boy)")
+            print("Kişi bekar: \(k.bekar)")
+        }
     }
     
     @IBAction func buttonBitir(_ sender: Any) {

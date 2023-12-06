@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1134B0FD2B206332003BBF06 /* Kisiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1134B0FC2B206332003BBF06 /* Kisiler.swift */; };
 		1178CBE52B1DCDB3000650EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1178CBE42B1DCDB3000650EF /* AppDelegate.swift */; };
 		1178CBE72B1DCDB3000650EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1178CBE62B1DCDB3000650EF /* SceneDelegate.swift */; };
 		1178CBE92B1DCDB3000650EF /* AnasayfaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1178CBE82B1DCDB3000650EF /* AnasayfaVC.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1134B0FC2B206332003BBF06 /* Kisiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kisiler.swift; sourceTree = "<group>"; };
 		1178CBE12B1DCDB3000650EF /* CalismaYapisi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalismaYapisi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1178CBE42B1DCDB3000650EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1178CBE62B1DCDB3000650EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				1178CBE62B1DCDB3000650EF /* SceneDelegate.swift */,
 				1178CBE82B1DCDB3000650EF /* AnasayfaVC.swift */,
 				1178CBFA2B1DCF13000650EF /* SonucEkraniVC.swift */,
+				1134B0FC2B206332003BBF06 /* Kisiler.swift */,
 				1178CBF82B1DCEE9000650EF /* OyunEkraniVC.swift */,
 				1178CBEA2B1DCDB3000650EF /* Main.storyboard */,
 				1178CBED2B1DCDB5000650EF /* Assets.xcassets */,
@@ -149,6 +152,7 @@
 				1178CBE52B1DCDB3000650EF /* AppDelegate.swift in Sources */,
 				1178CBE72B1DCDB3000650EF /* SceneDelegate.swift in Sources */,
 				1178CBF92B1DCEE9000650EF /* OyunEkraniVC.swift in Sources */,
+				1134B0FD2B206332003BBF06 /* Kisiler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
