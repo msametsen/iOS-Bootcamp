@@ -18,13 +18,13 @@ class KisiDetay: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let k = kisi {
+        
             if let k = kisi {
                 tfKisiAd.text = k.kisi_ad
                 tfKisiTel.text = k.kisi_tel
             }
         }
-    }
+    
     
 
     @IBAction func buttonGuncelle(_ sender: Any) {

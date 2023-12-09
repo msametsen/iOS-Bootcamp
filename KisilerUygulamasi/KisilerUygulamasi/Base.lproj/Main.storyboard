@@ -16,23 +16,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SS6-vA-dgs">
-                                <rect key="frame" x="147" y="423.5" width="120" height="49"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="DETAY" subtitle="">
-                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
-                                </buttonConfiguration>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="G6o-0v-1vs">
+                                <rect key="frame" x="0.0" y="153" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="buttonDetay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qWD-ob-aOK"/>
-                                    <action selector="buttonKaydet:" destination="S8l-Wa-ah2" eventType="touchUpInside" id="1hn-25-XYX"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="oc3-Mp-EcL"/>
                                 </connections>
-                            </button>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0TA-b6-i4O">
+                                <rect key="frame" x="0.0" y="208.5" width="414" height="653.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="kisilerHucre" id="mvV-Wp-UDi" customClass="KisilerHucre" customModule="KisilerUygulamasi" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mvV-Wp-UDi" id="b7R-lJ-vRu">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="7UH-g7-Rzy">
+                                                    <rect key="frame" x="36" y="15" width="59" height="70"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8t-oZ-fjf">
+                                                            <rect key="frame" x="0.0" y="0.0" width="59" height="30"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ka5-rV-MUZ">
+                                                            <rect key="frame" x="0.0" y="46" width="59" height="24"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7UH-g7-Rzy" firstAttribute="leading" secondItem="b7R-lJ-vRu" secondAttribute="leadingMargin" constant="16" id="ESC-c3-pKJ"/>
+                                                <constraint firstItem="7UH-g7-Rzy" firstAttribute="centerY" secondItem="b7R-lJ-vRu" secondAttribute="centerY" id="kUq-Q5-kWP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelKisiAd" destination="l8t-oZ-fjf" id="fTC-GJ-9Md"/>
+                                            <outlet property="labelKisiTel" destination="Ka5-rV-MUZ" id="Sgo-lq-KZD"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="SS6-vA-dgs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1EP-fi-5ni"/>
-                            <constraint firstItem="SS6-vA-dgs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kzX-gx-ddI"/>
+                            <constraint firstItem="G6o-0v-1vs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ahj-2T-n0Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0TA-b6-i4O" secondAttribute="bottom" id="EpL-C5-zYn"/>
+                            <constraint firstItem="G6o-0v-1vs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Pgh-MY-Lxn"/>
+                            <constraint firstItem="G6o-0v-1vs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bbj-ZE-LII"/>
+                            <constraint firstItem="0TA-b6-i4O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nmh-Nc-Moe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0TA-b6-i4O" secondAttribute="trailing" id="peH-p2-emc"/>
+                            <constraint firstItem="G6o-0v-1vs" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="skC-2g-nYa"/>
+                            <constraint firstItem="0TA-b6-i4O" firstAttribute="top" secondItem="G6o-0v-1vs" secondAttribute="bottom" id="zqR-H5-kfX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Kişiler" id="rbr-cl-liN">
@@ -43,6 +86,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="kisilerTableView" destination="0TA-b6-i4O" id="1ex-C2-dwG"/>
+                        <outlet property="searchBar" destination="G6o-0v-1vs" id="tlj-Vs-VVu"/>
                         <segue destination="83p-zT-Tmz" kind="show" identifier="toDetay" id="fYW-P6-bRY"/>
                     </connections>
                 </viewController>

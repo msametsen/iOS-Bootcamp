@@ -16,6 +16,7 @@
 		1130BB342B246A3C00D4BCE1 /* KisiKayit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130BB332B246A3C00D4BCE1 /* KisiKayit.swift */; };
 		1130BB362B246A5500D4BCE1 /* KisiDetay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130BB352B246A5500D4BCE1 /* KisiDetay.swift */; };
 		1130BB382B246C4800D4BCE1 /* Kisiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130BB372B246C4800D4BCE1 /* Kisiler.swift */; };
+		115DAC462B24A3AB007B5069 /* KisilerHucre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115DAC452B24A3AB007B5069 /* KisilerHucre.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1130BB332B246A3C00D4BCE1 /* KisiKayit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisiKayit.swift; sourceTree = "<group>"; };
 		1130BB352B246A5500D4BCE1 /* KisiDetay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisiDetay.swift; sourceTree = "<group>"; };
 		1130BB372B246C4800D4BCE1 /* Kisiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kisiler.swift; sourceTree = "<group>"; };
+		115DAC452B24A3AB007B5069 /* KisilerHucre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisilerHucre.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		1130BB302B2469BC00D4BCE1 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				115DAC442B24A386007B5069 /* tableview */,
 				1130BB322B2469F500D4BCE1 /* views */,
 			);
 			path = ui;
@@ -106,6 +109,14 @@
 				1130BB352B246A5500D4BCE1 /* KisiDetay.swift */,
 			);
 			path = views;
+			sourceTree = "<group>";
+		};
+		115DAC442B24A386007B5069 /* tableview */ = {
+			isa = PBXGroup;
+			children = (
+				115DAC452B24A3AB007B5069 /* KisilerHucre.swift */,
+			);
+			path = tableview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1130BB342B246A3C00D4BCE1 /* KisiKayit.swift in Sources */,
+				115DAC462B24A3AB007B5069 /* KisilerHucre.swift in Sources */,
 				1130BB362B246A5500D4BCE1 /* KisiDetay.swift in Sources */,
 				1130BB202B24696A00D4BCE1 /* Anasayfa.swift in Sources */,
 				1130BB1C2B24696A00D4BCE1 /* AppDelegate.swift in Sources */,
