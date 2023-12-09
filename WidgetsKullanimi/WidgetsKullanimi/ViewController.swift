@@ -22,8 +22,22 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!//Bunu yapmamızın sebebi switch en son hangi durumda kaldığını okumak bu yüzden outlet olarak tanımladık(konsol)
     
-    override func viewDidLoad() {
+    
+    @IBOutlet weak var labelSlider: UILabel!
+    
+    
+    @IBOutlet weak var slider: UISlider!
+    
+    
+    @IBOutlet weak var labelSteper: UILabel!
+    
+    
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
+    
+    override func viewDidLoad() { //Sayfa ilk açıldığında çalışan yer burasıdır
         super.viewDidLoad()
+        labelSlider.text = String(Int(slider.value))//Sayfa yüklendiğinde slider değerini göstermesi için gereken kod
+        indicator.isHidden = true
         
     }
 
@@ -65,6 +79,28 @@ class ViewController: UIViewController {
         print("Seçim : \(secilenKategori!)")
     }
     
+    
+    @IBAction func sliderDegisim(_ sender: UISlider) {
+        labelSlider.text = String(Int(sender.value))  //Değeri labelde görmek için gereken kod.Int yapmamızın sebebi tam sayılı değerler göstersin diye.
+    }
+    
+    
+    
+    @IBAction func stepperDegisim(_ sender: UIStepper) {
+        labelSteper.text = String(Int(sender.value))
+    }
+    
+    
+    @IBAction func buttonBasla(_ sender: Any) {
+        indicator.isHidden = false
+        indicator.startAnimating()
+    }
+    
+    
+    @IBAction func buttonDur(_ sender: Any) {
+        indicator.isHidden = true
+        indicator.stopAnimating()
+    }
     
 }
 
